@@ -39,6 +39,9 @@ Design your `main` function so that it asks the user to choose between creating 
 
 Save your code in the file called `quizgen.cc`.
 
+## Hints
+For this project, it is a good idea to use strings when getting user input to avoid using `cin.ignore` that tends to be confusing. 
+
 # Documentation
 See [google's style guide](https://google.github.io/styleguide/cppguide.html#Comments) for more details.
 
