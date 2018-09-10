@@ -1,4 +1,6 @@
 # QuizMaker Project Milestone 1
+*Due: September 21, 11:59pm*
+
 This is milestone 1 of the [QuizMaker Project](https://docs.google.com/document/d/1kxz9GX_Fm1rGeQZCyvOVQ7Szpre8MZwEgXG5zyMIcI8/edit?usp=sharing).
 
 # Requirements
@@ -65,9 +67,6 @@ Provide comments in tricky, non-obvious, interesting, or important parts of your
 // sqrt((x1-x2)^2 + (y1-y2)^2)
 double dist = sqrt(pow(x1 - x2, 2) + pow(y1-y2, 2));
 ```
-
-# Deadline
-September 21, 11:59pm
 
 # Code evaluation
 Open the terminal and navigate to the folder that contains this milestone. Assuming you have pulled the code inside of `/home/student/project01-tuffy` and you are currently in `/home/student` you can issue the following commands
