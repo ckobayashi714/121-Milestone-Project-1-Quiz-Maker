@@ -3,13 +3,19 @@
 
 using namespace std;
 
-// Here the addQuestion function will ask the user to input their information.
+//The addQuestion function will ask the user to input their question and answer.
 void addQuestion() {
+  string str, answer;
   cout << "Please enter your question: ";
+  getline(cin, str);
   cout << "Please enter the answer: ";
+  getline(cin, answer);
   cout << "Question added!" << endl;
 }
-
+/*This program will reapteadly ask the user to input a question or exit. If the
+user inputs something other than a or b (capital letters too), they will be
+notified with an error message, but will then be asked again what option they
+would like to choose.*/
 int main() {
   char choice;
   cout << "Welcome to QuizMaker\n";
@@ -19,8 +25,9 @@ int main() {
   cout << "b. Quit\n";
   cout << "Choice: ";
   cin >> choice;
+  cin.ignore();
 
-  while (choice != 'b' && choice != 'B') {
+  do {
     switch (choice) {
     case 'a':
     case 'A':
@@ -32,6 +39,10 @@ int main() {
       cout << "b. Quit" << endl;
       cout << "Choice: ";
       cin >> choice;
+      cin.ignore();
+      break;
+    case 'b':
+    case 'B':
       break;
     default:
       cout << endl;
@@ -42,8 +53,9 @@ int main() {
       cout << "b. Quit" << endl;
       cout << "Choice: ";
       cin >> choice;
+      cin.ignore();
     }
-  }
+  } while (choice != 'b' && choice != 'B');
   cout << endl;
   cout << "Thank you for using QuizMaker!" << endl;
   return 0;
