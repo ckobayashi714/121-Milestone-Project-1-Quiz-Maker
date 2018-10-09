@@ -3,7 +3,8 @@
 
 using namespace std;
 
-//The addQuestion function will ask the user to input their question and answer.
+// The addQuestion function will ask the user to input their question and
+// answer.
 void addQuestion() {
   string str, answer;
   cout << "Please enter your question: ";
